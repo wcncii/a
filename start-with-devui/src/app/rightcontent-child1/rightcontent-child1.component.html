@@ -1,0 +1,66 @@
+<div>
+  <d-search 
+    style="width:300px;float:left"
+    placeholder="请输入关键字，按enter建搜索"
+  ></d-search>
+  <div id="div1">
+    <div>
+        <i class="icon-add-member"></i>
+        <p>添加成员</p>
+    </div>
+    <div>
+        <i class="icon-qrcode"></i>
+        <p>通过链接邀请</p>
+    </div>
+    <div>
+        <i class="icon-help"></i>
+        <p>角色权限说明</p>
+    </div>
+  </div>
+  <div style="clear:both"></div>
+
+  <d-data-table
+    #datatable
+    [dataSource]="basicDataSource"
+    [scrollable]="true"
+    [type]="'striped'"
+    [checkable]="true"
+    >
+    
+    <d-column
+      *ngFor="let colOption of dataTableOptions.columns"
+      [field]="colOption.field"
+      [header]="colOption.header"
+      [fieldType]="colOption.fieldType"
+      [width]="'150px'"
+    >
+    </d-column>
+    <d-column field="action"
+      header="操作"
+    >
+    <d-cell>
+      <ng-template let-rowIndex="rowIndex" let-rowItem="rowItem">
+        <div style="display: flex;">
+          <div class="icon-edit">
+          </div>
+          <div *ngIf="rowIndex !== 0" class="icon-delete">
+          </div>
+        </div>
+      </ng-template>
+    </d-cell>
+    </d-column>
+  </d-data-table>
+
+  <div id="div2">
+    <p>(总条数：648)</p>
+    <div class="btn-group g-dropdown" dDropDown >
+      <a dDropDownToggle class="devui-dropdown-default">
+        1/65
+        <span class="devui-caret"></span>
+      </a>
+    </div>
+    <i class="icon-collapse"></i>
+    <i class="icon-chevron-right"></i>
+    <i class="icon-setup"></i>
+  </div>
+</div>

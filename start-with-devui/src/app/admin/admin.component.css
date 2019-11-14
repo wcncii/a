@@ -1,0 +1,50 @@
+body,div
+{
+    padding:0;
+    margin: 0;
+}
+
+.left,.right
+{
+    padding: 10px;
+    height:700px;
+}
+
+.left
+{
+    width: 270px;
+    float:left;
+    background-color:white;
+}
+
+.right
+{
+    overflow: hidden;
+    background-color: white;
+}
+
+.top
+{
+    background-color: black;
+}
+
+.top > *
+{
+    float:left;
+    margin-left:10px;
+}
+#text1{
+    border-bottom: 2px solid;
+    color:red;
+    padding-top:20px;
+    padding-bottom: 10px;
+    color: red;
+}
+#text2
+{
+    position: absolute;
+    right:10px;
+    color:white;
+    padding-top:15px;
+    padding-bottom: 10px;
+}

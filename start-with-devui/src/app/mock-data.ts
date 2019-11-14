@@ -1,0 +1,57 @@
+export interface SourceType {
+    name:string;
+    nickName:string;
+    tag:string;
+    enterpriseUser:string;
+    projectRole:string;
+    accountArch:string;
+    isDisable:string;
+  }
+  
+export const originSource = [
+{
+    name:"xxx",
+    nickName:"xxx",
+    tag:"",
+    enterpriseUser:"china",
+    projectRole:"项目创建者",
+    accountArch:"华为云",
+    isDisable:"否"
+},
+{
+    name:"xxx",
+    nickName:"xxx",
+    tag:"",
+    enterpriseUser:"china",
+    projectRole:"项目经理",
+    accountArch:"华为云",
+    isDisable:"否"
+},
+{
+    name:"xxx",
+    nickName:"xxx",
+    tag:"",
+    enterpriseUser:"china",
+    projectRole:"项目经理",
+    accountArch:"华为云",
+    isDisable:"否"
+},
+{
+    name:"xxx",
+    nickName:"xxx",
+    tag:"",
+    enterpriseUser:"china",
+    projectRole:"参与者",
+    accountArch:"华为云",
+    isDisable:"否"
+},
+{
+    name:"xxx",
+    nickName:"xxx",
+    tag:"",
+    enterpriseUser:"china",
+    projectRole:"参与者",
+    accountArch:"华为云",
+    isDisable:"否"
+}
+];
